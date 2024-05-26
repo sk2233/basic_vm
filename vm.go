@@ -243,5 +243,7 @@ func (v *VM) LoadFile(file string) {
 	index := 3
 	for int(offset) < len(v.Mem) && index < len(bs) {
 		v.Mem[offset] = binary.LittleEndian.Uint16(bs[index-1 : index+1])
+		offset++
+		index += 2
 	}
 }

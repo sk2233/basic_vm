@@ -16,6 +16,6 @@ func main() {
 	//fmt.Printf("%08b\n", d)  // 00000010
 	//fmt.Printf("%08b\n", ^d) // 11111101
 	vm := NewVM()
-	vm.LoadFile("")
+	vm.LoadFile("2048.obj")
 	vm.Run()
 }
